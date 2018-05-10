@@ -50,7 +50,10 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.idea
 .gitignore
 vn_news/__pycache__/
 vn_news/spiders/__pycache__/
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea
