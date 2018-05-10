@@ -51,7 +51,7 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.ida
+.idea
 .gitignore
 .idea/inspectionProfiles/
 vn_news/__pycache__/
