@@ -3,12 +3,14 @@ from scrapy.spiders import CrawlSpider
 
 
 class BaomoiArticleSpider(CrawlSpider):
-    name = "baomoi"
+    name = "baomoi-item"
     start_urls = [
         "http://www.baomoi.com/dong-nhi-show-hang-sieu-xe-audi-r8-13-ty-tai-sai-gon/c/21461403.epi",
     ]
+    print('============ Crawling ===============')
 
     def parse(self, response):
+        self.logger.info('============ Crawling ===============')
         self.logger.info('==> %s', response.url)
         url = response.url
         id = re.compile(".*/(\d+).epi").match(url).groups()[0]

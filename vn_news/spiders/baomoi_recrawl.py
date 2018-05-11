@@ -5,7 +5,8 @@ from scrapy.spiders import CrawlSpider
 
 
 class BaomoiArticleSpider(CrawlSpider):
-    name = "baomoi"
+    name = "baomoi-reload"
+    print("Crawing...")
     filepath = join(dirname(dirname(__file__)), "data", "crawled_urls.txt")
     start_urls = [line.strip() for line in open(filepath, "r").readlines()]
 
